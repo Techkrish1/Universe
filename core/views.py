@@ -71,3 +71,8 @@ def signin(request):
 def logout(request):
     auth.logout(request)
     return redirect('signin')
+
+
+@login_required(login_url='signin')
+def settings(request):
+    return render(request, 'setting.html')
