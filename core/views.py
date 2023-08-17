@@ -2,9 +2,12 @@ from django.shortcuts import render, redirect
 from django.contrib.auth.models import User, auth
 from django.contrib import messages # It is used to sent messages
 from django.http import HttpResponse
+from django.contrib.auth.decorators import login_required
 from .models import Profile
 
 # Landing Page
+
+@login_required(login_url='signin')
 
 def index(request):
     return render(request, 'index.html')
@@ -64,6 +67,7 @@ def signin(request):
         return render(request, 'signin.html')
 
 
+@login_required(login_url='signin')
 def logout(request):
     auth.logout(request)
     return redirect('signin')
