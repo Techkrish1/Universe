@@ -44,22 +44,23 @@
                         <p></p>
                     </div>
                     <div class="bg-white rounded-md lg:shadow-lg shadow col-span-2">
-                        
-                        <form action="" method="POST">
+                        <!-- here the enctype="multipart/form-data" is used to submit the images or any pdf like -->
+                        <form action="" method="POST" enctype="multipart/form-data"> 
                             {% csrf_token %}
                             <div class="grid grid-cols-2 gap-3 lg:p-6 p-4">
                            
                             <div class="col-span-2">
                                 <label for="">Profile Image</label> 
-                                <input type="file" name="image" placeholder="" class="shadow-none bg-gray-100">
+                                <img width="100px" height="100px" src="{{user_profile.profileimg.url}}" alt="">
+                                <input type="file" name="image" value="" class="shadow-none bg-gray-100">
                             </div> 
                             <div class="col-span-2">
                                 <label for="about">Bio</label>  
-                                <textarea id="about" name="bio" rows="3"  class="shadow-none bg-gray-100"></textarea>
+                                <textarea id="about" name="bio" rows="3"  class="shadow-none bg-gray-100">{{user_profile.bio}}</textarea>
                             </div> 
                             <div class="col-span-2">
                                 <label for=""> Location</label>
-                                <input type="text" name="location" placeholder="" class="shadow-none bg-gray-100">
+                                <input type="text" name="location" value="{{user_profile.location}}" placeholder="" class="shadow-none bg-gray-100">
                             </div>
                             <!-- <div>
                                <label for=""> Working at</label>
