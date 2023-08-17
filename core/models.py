@@ -1,5 +1,7 @@
 from django.db import models
 from django.contrib.auth import get_user_model
+import uuid  # it is creating unique id in our app we used this for the image posts.
+from datetime import datetime
 
 # user authentication
 
@@ -14,3 +16,15 @@ class Profile(models.Model):
     def __str__(self):
         return self.user.username
     
+# image posting in the social media  
+
+class Post(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4) # UUID field is generating long character nuber based id
+    user = models.CharField(max_length=100)
+    image = models.ImageField(upload_to='post_images')
+    caption = models.TextField()
+    created_at = models.DateTimeField(default=datetime.now)
+    no_of_likes = models.IntegerField(default=0) # initially like count is 0
+    
+    def __str__(self):
+        return self.user
