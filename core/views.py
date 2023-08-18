@@ -130,3 +130,9 @@ def upload(request):
         return redirect('/')
     
     return HttpResponse('<h1>Hello</h1>')
+
+# here to like the post
+
+@login_required(login_url='signin')
+def like_post(request):
+    pass
