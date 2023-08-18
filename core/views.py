@@ -138,7 +138,7 @@ def like_post(request):
     username = request.user.username
     post_id = request.GET.get('post_id')
 
-    post =post.objects.get(id=post_id)
+    post =Post.objects.get(id=post_id)
 
     like_filter = LikePost.objects.filter(post_id=post_id, username=username).first()
 
