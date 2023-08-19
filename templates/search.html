@@ -248,7 +248,6 @@
                     .search-result-item .image-link {
                         display: inline-block;
                         margin: -20px 0 -20px -20px;
-                        float: left;
                         width: 200px
                     }
                 }
@@ -321,23 +320,23 @@
                         <!-- <p class="search-results-count">About 94 700 000 (0.39 sec.) results</p> -->
                         
                         {% for users in username_profile_list %}
-                        <section class="search-result-item">
-                            <a class="image-link" href="/profile/{{users.user}}"><img class="image" src="{{users.profileimg.url}}">
-                            </a>
-                            <div class="search-result-item-body">
-                                <div class="row">
-                                    <div class="col-sm-9">
-                                        <h4 class="search-result-item-heading"><a href="/profile/{{users.user}}"><b>@{{users.user}}</b></a></h4>
-                                        <p class="info">{{users.location}}</p>
-                                        <p class="description">{{users.bio}}</p>
+                            <section class="search-result-item">
+                                <a class="image-link" href="/profile/{{users.user}}"><img class="image" src="{{users.profileimg.url}}">
+                                </a>
+                                <div class="search-result-item-body">
+                                    <div class="row">
+                                        <div class="col-sm-9">
+                                            <h4 class="search-result-item-heading"><a href="/profile/{{users.user}}"><b>@{{users.user}}</b></a></h4>
+                                            <p class="info">{{users.location}}</p>
+                                            <p class="description">{{users.bio}}</p>
+                                        </div>
+                                        <!-- <div class="col-sm-3 text-align-center">
+                                            <p class="value3 mt-sm">$9, 700</p>
+                                            <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
+                                        </div> -->
                                     </div>
-                                    <!-- <div class="col-sm-3 text-align-center">
-                                        <p class="value3 mt-sm">$9, 700</p>
-                                        <p class="fs-mini text-muted">PER WEEK</p><a class="btn btn-primary btn-info btn-sm" href="#">Learn More</a>
-                                    </div> -->
                                 </div>
-                            </div>
-                        </section>
+                            </section>
                         {% endfor %}
                         
                         <!-- <div class="text-align-center">
