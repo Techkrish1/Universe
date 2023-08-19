@@ -3,7 +3,7 @@ from django.contrib.auth.models import User, auth
 from django.contrib import messages # It is used to sent messages
 from django.http import HttpResponse
 from django.contrib.auth.decorators import login_required
-from .models import Profile, Post, LikePost
+from .models import Profile, Post, LikePost, FollowersCount
 
 # Landing Page
 
@@ -171,4 +171,25 @@ def profile(request, pk):
     }
 
     return render(request, 'profile.html', context)
+
+
+# User can follow other users
+
+@login_required(login_url='signin')
+def follow(request):
+    if request.method == 'POST':
+        follower = request.POST['follower']
+        user = request.POST['user']
+
+        if FollowersCount.objects.filter(follower= follower, user=user).first(): # if the user already followed another user then he again clicking the follow button then it means unfollow
+            delete_follower = FollowersCount.objects.get(follower=follower, user=user)
+            delete_follower.delete()
+            return redirect('/profile/'+ user)
+        else: # if the user doesn't follow the another user and he tries to follow
+            new_follower = FollowersCount.objects.create(follower= follower, user=user)
+            new_follower.save()
+            return redirect('/profile/'+ user)
+
+    else:
+        return redirect('/')
 
