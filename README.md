@@ -34,11 +34,11 @@
 
 ## View others profile
 
-# ![Alt text](image-5.png)
+# ![other's profile](image-5.png)
 
 ## Search results
 
-# ![Alt text](image-6.png)
+# ![search results](image-6.png)
 
 <br />
 
