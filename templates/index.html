@@ -217,7 +217,7 @@
                                             <img src="{% static 'assets/images/avatars/avatar-2.jpg' %}" class="bg-gray-200 border border-white rounded-full w-8 h-8">
                                         </div>
                                     </a> -->
-                                    <span class="block capitalize font-semibold "><a href="/profile/{{post.user}}">@{{post.user}}</a>  </span>
+                                    <span class="block capitalize font-semibold "><a href="/profile/{{post.user}}" style="color: rgb(249, 33, 191);">@{{post.user}}</a>  </span>
                                 </div>
                                 <div>
                                 <a href="#"> <i class="icon-feather-more-horizontal text-2xl hover:bg-gray-200 rounded-full p-2 transition -mr-1 "></i> </a>
@@ -263,21 +263,28 @@
                                     <img src="{{post.image.url}}" alt="">
                                 </a>
                             </div>
-                                
+                            
         
                                 <div class="py-3 px-4 space-y-3"> 
                                 
                                     <div class="flex space-x-4 lg:font-bold">
                                         <a href="/like-post?post_id={{post.id}}" class="flex items-center space-x-2">
                                             <div class="p-2 rounded-full text-black">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="25" height="25" class="">
-                                                    <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
-                                                </svg>
+                                                
                                                 {% if post.no_of_likes == 0 %}
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="25" height="25" class="">
+                                                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+                                                    </svg>
                                                     <p>No likes</p>
                                                 {% elif post.no_of_likes == 1 %}
+                                                    <svg style="color:rgb(249, 33, 191)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="25" height="25" class="">
+                                                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+                                                    </svg>
                                                     <p>Liked by {{post.no_of_likes}} person</p>
                                                 {% else %}
+                                                    <svg style="color:rgb(249, 33, 191)" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="25" height="25" class="">
+                                                        <path d="M2 10.5a1.5 1.5 0 113 0v6a1.5 1.5 0 01-3 0v-6zM6 10.333v5.43a2 2 0 001.106 1.79l.05.025A4 4 0 008.943 18h5.416a2 2 0 001.962-1.608l1.2-6A2 2 0 0015.56 8H12V4a2 2 0 00-2-2 1 1 0 00-1 1v.667a4 4 0 01-.8 2.4L6.8 7.933a4 4 0 00-.8 2.4z" />
+                                                    </svg>
                                                     <p>Liked by {{post.no_of_likes}} people</p>
                                                 {% endif %}
 
@@ -308,7 +315,7 @@
                                     </div> -->
 
                                     <p>
-                                        <a href="/profile/{{post.user}}"><strong>{{post.user}}</strong></a> {{post.caption}}
+                                        <a href="/profile/{{post.user}}"><strong style="color: rgb(249, 33, 191);">{{post.user}}</strong></a> {{post.caption}}
                                     </p>
 
                                     <!-- <div class="border-t pt-4 space-y-4 ">
@@ -357,7 +364,7 @@
                         <div class="bg-white  shadow-md rounded-md overflow-hidden">
 
                             <div class="bg-gray-50  border-b border-gray-100 flex items-baseline justify-between py-4 px-6 ">
-                                <h2 class="font-semibold text-lg">Users You Can Follow</h2>
+                                <h2 class="font-semibold text-lg" style="color: rgb(249, 33, 191);">Users You Can Follow</h2>
                                 <!-- <a href="#"> Refresh</a> -->
                             </div>
                            

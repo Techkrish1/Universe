@@ -5,7 +5,7 @@
 ### Overview
 
 - [Overview](#overview)
-- [Screen Shots](#screen-shots)
+- [Screenshots](#screenshots)
 - [Tech Stack](#tech-stack)
 - [Features](#features)
 - [Setup](#setup)
@@ -14,31 +14,33 @@
 
 <br />
 
-### Screen Shots
+### Screenshots
 
 ## SignUp page
 
-# ![signup page](image-1.png)
+# ![signup page]()
 
 ## Login page
 
-# ![Login page](image-2.png)
+![Login page]()
 
 ## Home page
 
-# ![Home page](image-3.png)
+# ![Home page]()
 
 ## Profile setting page
 
-# ![profile](image-4.png)
+# ![profile]()
 
 ## View others profile
 
-# ![other's profile](image-5.png)
+# ![]()
+
+# ![search results]()
 
 ## Search results
 
-# ![search results](image-6.png)
+# ![search results]()
 
 <br />
 

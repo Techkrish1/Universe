@@ -91,12 +91,16 @@
 		<section>
 			<div class="row mt-4">
 				<div class="col-md-8 offset-md-2">
+					<div class="mb-4 mt-4" >
+						<h1 style="color: rgb(249, 33, 191);">Posts</h1>
+					</div>
 					<div class="row">
 						{% for post in user_posts %}
 							<div class="col-md-4 mb-4">
 								<div class="card">
 									<a href="{{ post.image.url }}"><img src="{{ post.image.url }}" class="card-img-top" alt="Post Image"></a>
 									<div class="card-body">
+										{{post.caption}}
 									</div>
 								</div>
 							</div>
