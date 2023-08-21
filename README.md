@@ -18,29 +18,28 @@
 
 ## SignUp page
 
-# ![signup page]()
+![image](https://github.com/Techkrish1/Universe/assets/111285228/471e088e-faa8-4c02-aa94-90d00cdf8201)
 
 ## Login page
 
-![Login page]()
+![image-2](https://github.com/Techkrish1/Universe/assets/111285228/a1515931-0403-4d97-ae5e-1c30560c91a1)
 
 ## Home page
 
-# ![Home page]()
+![image](https://github.com/Techkrish1/Universe/assets/111285228/d86a655c-83ca-40e5-ba18-4cf15ffc39a7)
+
 
 ## Profile setting page
 
-# ![profile]()
+![image-4](https://github.com/Techkrish1/Universe/assets/111285228/244f7d25-fa14-4d1d-83bc-b9d03d88a5c4)
 
-## View others profile
+## View other's profile
 
-# ![]()
-
-# ![search results]()
+![download](https://github.com/Techkrish1/Universe/assets/111285228/15a48cf9-7ebb-4027-932c-4960236c2ebe)
 
 ## Search results
 
-# ![search results]()
+![image-6](https://github.com/Techkrish1/Universe/assets/111285228/2736d139-2670-45b9-ad64-da41e8c7f602)
 
 <br />
 
